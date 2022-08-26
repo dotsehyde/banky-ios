@@ -31,7 +31,7 @@ struct OnBoardView: View {
                         NavigationLink(destination: BottomNav().navigationBarBackButtonHidden(true)) {
                             HStack {
                                 Text("Start Now")
-                                    .font(Font.custom("Circular Std", size: 18))
+                                    .font(.system(size: 18,design: .rounded))
                                 Image(systemName: "arrow.right")
                             }
                                 .foregroundColor(.white)

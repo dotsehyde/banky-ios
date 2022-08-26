@@ -13,17 +13,28 @@ struct Home: View {
             ZStack {
                 Image("homebg").resizable(resizingMode: .stretch)
                 VStack {
-                    Spacer()
-                    ZStack {
-                        Color.white
-                            .frame(height: s.size.height * 0.7)
-                        VStack {
-                            Spacer().frame(height: s.size.height * 0.1)
-                            MainBody()
-                                .frame(height: s.size.height * 0.3)
+                    HStack {
+                        Circle()
+                            .fill(.white)
+                            .frame(width: 65, height: 65)
+                            .padding()
+                            .padding(.leading, 4)
+                            .overlay(alignment: .center) {
+                            Image(systemName: "line.3.horizontal")
+                                .fontWeight(.bold)
+                                .font(.title)
                         }
+                        Spacer()
                     }
+                    Spacer()
                 }
+                VStack {
+                    Spacer()
+                    MainBody(height: s.size.height)
+                        .frame(height: s.size.height * 0.7)
+                        .background(Color.white)
+                }
+
                 VStack {
                     RoundedRectangle(cornerRadius: 12, style: .circular)
                         .fill(Color.white)
@@ -60,10 +71,10 @@ struct HomeCard: View {
                 VStack(alignment: .leading) {
                     Spacer().frame(height: 15)
                     Text("Josuke Jotaro")
-                        .font(Font.custom("CircularStd", size: 20))
-                        .fontWeight(.bold)
+                        .font(.system(size: 20, weight: .medium, design: .rounded))
+
                     Text("@jojojotaro")
-                        .font(Font.custom("CircularStd", size: 15))
+                        .font(.system(size: 15, weight: .regular, design: .rounded))
                         .foregroundColor(.gray)
                     Spacer()
                 }.padding(.leading, 5)
@@ -74,8 +85,8 @@ struct HomeCard: View {
 
             HStack(alignment: .top) {
                 Text("Available balance")
-                    .font(Font.custom("CircularStd", size: 14))
-                    .fontWeight(.black)
+                    .font(.system(size: 15, weight: .regular, design: .rounded))
+
                     .foregroundColor(.gray)
                 Spacer()
                 Image("visa")
@@ -83,8 +94,8 @@ struct HomeCard: View {
             HStack {
                 Text("$12,496.00")
                     .foregroundColor(Color("darkBlue"))
-                    .fontWeight(.black)
-                    .font(Font.custom("CircularStd", size: 32))
+
+                    .font(.system(size: 32, weight: .bold, design: .rounded))
                 Spacer()
 
             }
@@ -93,8 +104,8 @@ struct HomeCard: View {
                 Spacer()
                 Text("****  ****    ****    2077")
                     .foregroundColor(Color("darkBlue").opacity(0.7))
-                    .fontWeight(.black)
-                    .font(Font.custom("CircularStd", size: 24))
+                 
+                    .font(.system(size: 24,weight: .bold))
                 Spacer()
 
             }
@@ -117,20 +128,22 @@ struct HomeCard_Previews: PreviewProvider {
 //MARK: - Body
 
 struct MainBody: View {
+    var height = 0.0
     var body: some View {
         ScrollView {
-            VStack {
+            LazyVStack {
+                Spacer().frame(height: height * 0.16)
                 HStack {
                     VStack(alignment: .leading) {
                         Image("cashback")
                         Text("Cashback")
-                            .font(Font.custom("CircularStd", size: 14))
+                            .font(.system(size: 14, weight: .none, design: .rounded))
                             .foregroundColor(.gray)
-                            .fontWeight(.black)
+
                         Text("$220.54")
-                            .font(Font.custom("CircularStd", size: 24))
+                            .font(.system(size: 24, weight: .bold, design: .rounded))
                             .foregroundColor(Color("darkBlue"))
-                            .fontWeight(.black)
+
                     }
                     Spacer()
                     Divider()
@@ -138,24 +151,50 @@ struct MainBody: View {
                     VStack(alignment: .leading) {
                         Image("save")
                         Text("Save Deposit")
-                            .font(Font.custom("CircularStd", size: 14))
+                            .font(.system(size: 14, weight: .none, design: .rounded))
                             .foregroundColor(.gray)
-                            .fontWeight(.black)
+
                         Text("$12,800.64")
-                            .font(Font.custom("CircularStd", size: 24))
+                            .font(.system(size: 24, weight: .bold, design: .rounded))
                             .foregroundColor(Color("darkBlue"))
-                            .fontWeight(.black)
+
                     }
                 }
+
+                HStack(alignment: .center) {
+                    Text("Today")
+                        .font(.system(size: 20, weight: .bold, design: .rounded))
+                        .foregroundColor(Color("darkBlue"))
+
+                    Image(systemName: "chevron.down")
+                        .imageScale(.medium)
+                    Spacer()
+                }.padding(.top, 4)
+                Divider()
+                ForEach(0..<10) { i in
+                    HStack {
+                        Text("Steam Store")
+                            .font(.system(size: 16, weight: .semibold, design: .rounded))
+
+                            .foregroundColor(Color("darkBlue"))
+                        Spacer()
+                        Text("-$19.99")
+                            .font(.system(size: 16, weight: .semibold, design: .rounded))
+
+                            .foregroundColor(Color.red.opacity(0.8))
+                    }
+
+                }
+
             }
-            .padding(.horizontal,30)
-        }
+                .padding(.horizontal, 30)
+        }.padding(.bottom, height * 0.125)
     }
 }
 
 struct MainBody_Previews: PreviewProvider {
     static var previews: some View {
-        MainBody()
+        MainBody(height: 0)
             .previewLayout(.sizeThatFits)
             .padding()
     }

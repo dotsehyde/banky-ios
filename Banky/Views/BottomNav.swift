@@ -14,16 +14,20 @@ struct BottomNav: View {
           Home()
                 .tabItem {
                     Image(systemName:"creditcard")
-                }
-            Home()
-                  .tabItem {
-                      Image(systemName:"bell")
-                  }
-            Home()
-                .tabItem {
-                    Image(systemName:"message")
                         
                 }
+                .tag(0)
+            Home()
+                  .tabItem {
+                      Image("bell")
+                  }
+                  .tag(1)
+            Home()
+                .tabItem {
+                    Image("msg")
+                        
+                }
+                .tag(2)
         }
     }
 }
