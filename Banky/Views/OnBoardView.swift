@@ -43,7 +43,7 @@ struct OnBoardView: View {
 
                 }
                     .padding(.bottom, 30)
-
+            
             }
         }.ignoresSafeArea(.all)
     }

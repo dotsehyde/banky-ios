@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D540D4028B925A20023EE19 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D540D3F28B925A20023EE19 /* DetailView.swift */; };
 		7DCC6A2B28B6483F00930872 /* BankyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCC6A2A28B6483F00930872 /* BankyApp.swift */; };
 		7DCC6A2F28B6484200930872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DCC6A2E28B6484200930872 /* Assets.xcassets */; };
 		7DCC6A3228B6484200930872 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DCC6A3128B6484200930872 /* Preview Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D540D3F28B925A20023EE19 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		7DCC6A2728B6483F00930872 /* Banky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Banky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DCC6A2A28B6483F00930872 /* BankyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankyApp.swift; sourceTree = "<group>"; };
 		7DCC6A2E28B6484200930872 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				7DCC6A3928B648AF00930872 /* Home.swift */,
 				7DCC6A3B28B6495400930872 /* OnBoardView.swift */,
 				7DCC6A5528B671E300930872 /* BottomNav.swift */,
+				7D540D3F28B925A20023EE19 /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DCC6A5628B671E300930872 /* BottomNav.swift in Sources */,
+				7D540D4028B925A20023EE19 /* DetailView.swift in Sources */,
 				7DCC6A3A28B648AF00930872 /* Home.swift in Sources */,
 				7DCC6A2B28B6483F00930872 /* BankyApp.swift in Sources */,
 				7DCC6A5428B66B5300930872 /* ViewController.swift in Sources */,

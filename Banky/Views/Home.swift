@@ -148,16 +148,18 @@ struct MainBody: View {
                     Spacer()
                     Divider()
                     Spacer()
-                    VStack(alignment: .leading) {
-                        Image("save")
-                        Text("Save Deposit")
-                            .font(.system(size: 14, weight: .none, design: .rounded))
-                            .foregroundColor(.gray)
+                    NavigationLink(destination: DetailView()) {
+                        VStack(alignment: .leading) {
+                            Image("save")
+                            Text("Save Deposit")
+                                .font(.system(size: 14, weight: .none, design: .rounded))
+                                .foregroundColor(.gray)
 
-                        Text("$12,800.64")
-                            .font(.system(size: 24, weight: .bold, design: .rounded))
-                            .foregroundColor(Color("darkBlue"))
+                            Text("$12,800.64")
+                                .font(.system(size: 24, weight: .bold, design: .rounded))
+                                .foregroundColor(Color("darkBlue"))
 
+                        }
                     }
                 }
 

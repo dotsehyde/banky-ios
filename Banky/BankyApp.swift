@@ -15,8 +15,6 @@ struct BankyApp: App {
             NavigationView {
                 OnBoardView()
             }
-
-
         }
     }
 }
