@@ -62,3 +62,6 @@ struct DetailView_Previews: PreviewProvider {
         DetailView()
     }
 }
+
+
+

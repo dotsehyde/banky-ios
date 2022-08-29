@@ -173,7 +173,7 @@ struct MainBody: View {
                     Spacer()
                 }.padding(.top, 4)
                 Divider()
-                ForEach(0..<10) { i in
+                ForEach(0..<4) { i in
                     HStack {
                         Text("Steam Store")
                             .font(.system(size: 16, weight: .semibold, design: .rounded))

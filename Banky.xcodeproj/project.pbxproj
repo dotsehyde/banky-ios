@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D1E132428BCE3F600EC8932 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 7D1E132328BCE3F600EC8932 /* Charts */; };
+		7D1E132828BCE49000EC8932 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E132728BCE49000EC8932 /* Transactions.swift */; };
+		7D1E132A28BCE52300EC8932 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E132928BCE52300EC8932 /* ChartView.swift */; };
+		7D1E132C28BCEC2100EC8932 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7D1E132B28BCEC2100EC8932 /* README.md */; };
 		7D540D4028B925A20023EE19 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D540D3F28B925A20023EE19 /* DetailView.swift */; };
 		7DCC6A2B28B6483F00930872 /* BankyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCC6A2A28B6483F00930872 /* BankyApp.swift */; };
 		7DCC6A2F28B6484200930872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DCC6A2E28B6484200930872 /* Assets.xcassets */; };
@@ -27,6 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D1E132128BCE39500EC8932 /* Charts-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Charts-master"; path = "../../../../../Downloads/Charts-master"; sourceTree = "<group>"; };
+		7D1E132728BCE49000EC8932 /* Transactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transactions.swift; path = "../../../../../Downloads/Charts-master/Transactions.swift"; sourceTree = "<group>"; };
+		7D1E132928BCE52300EC8932 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		7D1E132B28BCEC2100EC8932 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7D540D3F28B925A20023EE19 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		7DCC6A2728B6483F00930872 /* Banky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Banky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DCC6A2A28B6483F00930872 /* BankyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankyApp.swift; sourceTree = "<group>"; };
@@ -53,17 +61,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D1E132428BCE3F600EC8932 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D1E132228BCE3F600EC8932 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DCC6A1E28B6483E00930872 = {
 			isa = PBXGroup;
 			children = (
+				7D1E132B28BCEC2100EC8932 /* README.md */,
 				7DCC6A2928B6483F00930872 /* Banky */,
 				7DCC6A2828B6483F00930872 /* Products */,
+				7D1E132228BCE3F600EC8932 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +96,8 @@
 		7DCC6A2928B6483F00930872 /* Banky */ = {
 			isa = PBXGroup;
 			children = (
+				7D1E132728BCE49000EC8932 /* Transactions.swift */,
+				7D1E132128BCE39500EC8932 /* Charts-master */,
 				7DCC6A5228B66B4000930872 /* Controller */,
 				7DCC6A3E28B64EF900930872 /* Fonts */,
 				7DCC6A3D28B64ED100930872 /* Info.plist */,
@@ -104,6 +124,7 @@
 				7DCC6A3B28B6495400930872 /* OnBoardView.swift */,
 				7DCC6A5528B671E300930872 /* BottomNav.swift */,
 				7D540D3F28B925A20023EE19 /* DetailView.swift */,
+				7D1E132928BCE52300EC8932 /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +169,9 @@
 			dependencies = (
 			);
 			name = Banky;
+			packageProductDependencies = (
+				7D1E132328BCE3F600EC8932 /* Charts */,
+			);
 			productName = Banky;
 			productReference = 7DCC6A2728B6483F00930872 /* Banky.app */;
 			productType = "com.apple.product-type.application";
@@ -196,6 +220,7 @@
 				7DCC6A4828B64F1F00930872 /* FrankRuhlLibre-Bold.ttf in Resources */,
 				7DCC6A4628B64F1F00930872 /* FrankRuhlLibre-Light.ttf in Resources */,
 				7DCC6A4F28B66A6000930872 /* CircularStd-Black.ttf in Resources */,
+				7D1E132C28BCEC2100EC8932 /* README.md in Resources */,
 				7DCC6A4728B64F1F00930872 /* FrankRuhlLibre-Black.ttf in Resources */,
 				7DCC6A4528B64F1F00930872 /* FrankRuhlLibre-Regular.ttf in Resources */,
 				7DCC6A3228B6484200930872 /* Preview Assets.xcassets in Resources */,
@@ -213,10 +238,12 @@
 			files = (
 				7DCC6A5628B671E300930872 /* BottomNav.swift in Sources */,
 				7D540D4028B925A20023EE19 /* DetailView.swift in Sources */,
+				7D1E132828BCE49000EC8932 /* Transactions.swift in Sources */,
 				7DCC6A3A28B648AF00930872 /* Home.swift in Sources */,
 				7DCC6A2B28B6483F00930872 /* BankyApp.swift in Sources */,
 				7DCC6A5428B66B5300930872 /* ViewController.swift in Sources */,
 				7DCC6A3C28B6495400930872 /* OnBoardView.swift in Sources */,
+				7D1E132A28BCE52300EC8932 /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +446,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D1E132328BCE3F600EC8932 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7DCC6A1F28B6483E00930872 /* Project object */;
 }
