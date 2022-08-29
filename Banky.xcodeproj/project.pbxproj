@@ -91,7 +91,6 @@
 		7DCC6A1E28B6483E00930872 = {
 			isa = PBXGroup;
 			children = (
-				7D1E132D28BCED4100EC8932 /* screenshots */,
 				7D1E132B28BCEC2100EC8932 /* README.md */,
 				7DCC6A2928B6483F00930872 /* Banky */,
 				7DCC6A2828B6483F00930872 /* Products */,
@@ -110,6 +109,7 @@
 		7DCC6A2928B6483F00930872 /* Banky */ = {
 			isa = PBXGroup;
 			children = (
+				7D1E132D28BCED4100EC8932 /* screenshots */,
 				7D1E132728BCE49000EC8932 /* Transactions.swift */,
 				7D1E132128BCE39500EC8932 /* Charts-master */,
 				7DCC6A5228B66B4000930872 /* Controller */,
