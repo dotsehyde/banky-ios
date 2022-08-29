@@ -11,6 +11,8 @@
 		7D1E132828BCE49000EC8932 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E132728BCE49000EC8932 /* Transactions.swift */; };
 		7D1E132A28BCE52300EC8932 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E132928BCE52300EC8932 /* ChartView.swift */; };
 		7D1E132C28BCEC2100EC8932 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7D1E132B28BCEC2100EC8932 /* README.md */; };
+		7D1E133028BCED6200EC8932 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1E132E28BCED6200EC8932 /* 1.png */; };
+		7D1E133128BCED6200EC8932 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D1E132F28BCED6200EC8932 /* 2.png */; };
 		7D540D4028B925A20023EE19 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D540D3F28B925A20023EE19 /* DetailView.swift */; };
 		7DCC6A2B28B6483F00930872 /* BankyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCC6A2A28B6483F00930872 /* BankyApp.swift */; };
 		7DCC6A2F28B6484200930872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DCC6A2E28B6484200930872 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		7D1E132728BCE49000EC8932 /* Transactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transactions.swift; path = "../../../../../Downloads/Charts-master/Transactions.swift"; sourceTree = "<group>"; };
 		7D1E132928BCE52300EC8932 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		7D1E132B28BCEC2100EC8932 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7D1E132E28BCED6200EC8932 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ../../../../1.png; sourceTree = "<group>"; };
+		7D1E132F28BCED6200EC8932 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = ../../../../2.png; sourceTree = "<group>"; };
 		7D540D3F28B925A20023EE19 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		7DCC6A2728B6483F00930872 /* Banky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Banky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DCC6A2A28B6483F00930872 /* BankyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankyApp.swift; sourceTree = "<group>"; };
@@ -75,9 +79,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7D1E132D28BCED4100EC8932 /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				7D1E132E28BCED6200EC8932 /* 1.png */,
+				7D1E132F28BCED6200EC8932 /* 2.png */,
+			);
+			path = screenshots;
+			sourceTree = "<group>";
+		};
 		7DCC6A1E28B6483E00930872 = {
 			isa = PBXGroup;
 			children = (
+				7D1E132D28BCED4100EC8932 /* screenshots */,
 				7D1E132B28BCEC2100EC8932 /* README.md */,
 				7DCC6A2928B6483F00930872 /* Banky */,
 				7DCC6A2828B6483F00930872 /* Products */,
@@ -219,7 +233,9 @@
 				7DCC6A5128B66A6000930872 /* CircularStd-Bold.ttf in Resources */,
 				7DCC6A4828B64F1F00930872 /* FrankRuhlLibre-Bold.ttf in Resources */,
 				7DCC6A4628B64F1F00930872 /* FrankRuhlLibre-Light.ttf in Resources */,
+				7D1E133028BCED6200EC8932 /* 1.png in Resources */,
 				7DCC6A4F28B66A6000930872 /* CircularStd-Black.ttf in Resources */,
+				7D1E133128BCED6200EC8932 /* 2.png in Resources */,
 				7D1E132C28BCEC2100EC8932 /* README.md in Resources */,
 				7DCC6A4728B64F1F00930872 /* FrankRuhlLibre-Black.ttf in Resources */,
 				7DCC6A4528B64F1F00930872 /* FrankRuhlLibre-Regular.ttf in Resources */,
